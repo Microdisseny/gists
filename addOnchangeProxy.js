@@ -8,7 +8,7 @@ function addOnchangeProxy (el) {
     configurable: true,
     enumerable: true,
     get () {
-      return oldDescriptor.set.call(this);
+      return oldDescriptor.get.call(this);
     },
     set (v) {
       oldDescriptor.set.call(this, v);
